@@ -41,6 +41,7 @@ table.pvtTable tbody tr td {
 .pvtAxisContainer, .pvtVals {
     border: 1px solid #FAFBFC;
 /*    background: #EEE;*/
+    background-color: #FAFBFC;
     padding: 5px;
     min-width: 20px;
     min-height: 20px;
@@ -81,7 +82,10 @@ table.pvtTable tbody tr td {
 }
 
 .pvtHorizList li { display: inline; }
-.pvtVertList { vertical-align: top; }
+.pvtVertList {
+    vertical-align: top;
+    background-color: #FFFFFF;
+}
 
 .pvtFilteredAttribute { font-style: italic }
 
