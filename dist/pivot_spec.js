@@ -8,14 +8,17 @@
       name: "Nick",
       "colour": "red",
       "age": 34
-    }, {
+    },
+    {
       name: "Jane",
       "gender": "female"
-    }, {
+    },
+    {
       name: "John",
       "gender": "male",
       "age": 12
-    }, {
+    },
+    {
       name: "Jim",
       "gender": null,
       "age": 12
@@ -153,8 +156,8 @@
       });
     });
     describe("with rows/cols, sum aggregator, derivedAttributes, filter and sorters", function() {
-      var aggregators, derivers, ref, sortAs, table;
-      ref = $.pivotUtilities, sortAs = ref.sortAs, derivers = ref.derivers, aggregators = ref.aggregators;
+      var aggregators, derivers, sortAs, table;
+      ({sortAs, derivers, aggregators} = $.pivotUtilities);
       table = $("<div>").pivot(fixtureData, {
         rows: ["gender"],
         cols: ["birthyear"],
@@ -178,7 +181,7 @@
     });
     describe("with rows/cols, fraction-of aggregator", function() {
       var aggregators, table;
-      aggregators = $.pivotUtilities.aggregators;
+      ({aggregators} = $.pivotUtilities);
       table = $("<div>").pivot(fixtureData, {
         rows: ["gender"],
         aggregator: aggregators["Sum as Fraction of Total"](["trials"])
@@ -270,7 +273,8 @@
           {
             a: 1,
             b: 2
-          }, {
+          },
+          {
             a: 3,
             b: 4
           }
@@ -285,9 +289,11 @@
         raggedAosInput = [
           {
             a: 1
-          }, {
+          },
+          {
             b: 4
-          }, {
+          },
+          {
             a: 3,
             b: 2
           }
@@ -384,9 +390,7 @@
       var getVal, tpl;
       getVal = function(aggregator) {
         var pd;
-        pd = new $.pivotUtilities.PivotData(fixtureData, {
-          aggregator: aggregator
-        });
+        pd = new $.pivotUtilities.PivotData(fixtureData, {aggregator});
         return pd.getAggregator([], []).value();
       };
       tpl = $.pivotUtilities.aggregatorTemplates;
@@ -456,7 +460,7 @@
       });
       describe(".var", function() {
         return it("works", function() {
-          return expect(getVal(tpl["var"]()(['trials']))).toBe(48.666666666666686);
+          return expect(getVal(tpl.var()(['trials']))).toBe(48.666666666666686);
         });
       });
       describe(".stdev", function() {
