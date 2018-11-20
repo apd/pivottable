@@ -16,14 +16,20 @@ table.pvtTable thead tr th, table.pvtTable tbody tr th {
     padding: 5px;
 }
 
+table.pvtTable tbody tr:hover td,
+table.pvtTable tbody tr:hover th    {
+    background-color: #36B37E !important;
+    color: #ffffff !important;
+}
+
 table.pvtTable .pvtColLabel {text-align: center;}
 table.pvtTable .pvtTotalLabel {text-align: right;}
 
 table.pvtTable tbody tr td {
     color: #3D3D3D;
     padding: 5px;
-    background-color: #FFF;
-/*    border: 1px solid #CDCDCD;*/
+    /*    background-color: #FFF;
+    border: 1px solid #CDCDCD;*/
     vertical-align: top;
     text-align: right;
 }
@@ -40,7 +46,7 @@ table.pvtTable tbody tr td {
 
 .pvtAxisContainer, .pvtVals {
     border: 1px solid #FAFBFC;
-/*    background: #EEE;*/
+    /*    background: #EEE;*/
     background-color: #FAFBFC;
     padding: 5px;
     min-width: 20px;
