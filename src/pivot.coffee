@@ -23,9 +23,10 @@ callWithJQuery ($) ->
         return x1 + x2
 
     numberFormat = (opts) ->
+        # ru with thousands
         defaults =
-            digitsAfterDecimal: 2, scaler: 1,
-            thousandsSep: ",", decimalSep: "."
+            digitsAfterDecimal: 0, scaler: 1,
+            thousandsSep: " ", decimalSep: ","
             prefix: "", suffix: ""
         opts = $.extend({}, defaults, opts)
         (x) ->

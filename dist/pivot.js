@@ -36,11 +36,12 @@
     };
     numberFormat = function(opts) {
       var defaults;
+      // ru with thousands
       defaults = {
-        digitsAfterDecimal: 2,
+        digitsAfterDecimal: 0,
         scaler: 1,
-        thousandsSep: ",",
-        decimalSep: ".",
+        thousandsSep: " ",
+        decimalSep: ",",
         prefix: "",
         suffix: ""
       };
