@@ -1,4 +1,7 @@
-.pvtUi { color: #333; }
+.pvtUi {
+    color: #333;
+    border-collapse: collapse
+}
 
 
 table.pvtTable {
@@ -7,8 +10,8 @@ table.pvtTable {
     border-collapse: collapse;
 }
 table.pvtTable thead tr th, table.pvtTable tbody tr th {
-    background-color: #57D9A3;
-    border: 1px solid #5E6C84;
+    background-color: #ACF5D2;
+    border: 1px solid #B3BAC5;
     font-size: 8pt;
     padding: 5px;
 }
@@ -111,4 +114,4 @@ table.pvtTable tbody tr td {
 
 .pvtCheckContainer p{ margin: 5px; }
 
-.pvtRendererArea { padding: 5px;}
+.pvtRendererArea { padding: 0px;}
