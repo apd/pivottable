@@ -49,7 +49,7 @@ table.pvtTable tbody tr td {
     /*    border: 1px solid #FAFBFC;
       /*    background: #EEE;
         background-color: #FAFBFC;*/
-    padding: 5px;
+    padding: 10px !important;
     min-width: 20px;
     min-height: 20px;
 
@@ -60,7 +60,7 @@ table.pvtTable tbody tr td {
     -ms-user-select: none;
 }
 .pvtAxisContainer li {
-    padding: 4px 8px 4px 0px;
+    padding: 5px 10px 10px 0px;
     list-style-type: none;
     cursor:move;
 }
