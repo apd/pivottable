@@ -1,6 +1,7 @@
 .pvtUi {
     color: #333;
-    border-collapse: collapse
+    border-collapse: collapse;
+    margin: 15px;
 }
 
 
@@ -8,6 +9,7 @@ table.pvtTable {
     font-size: 8pt;
     text-align: left;
     border-collapse: collapse;
+    background-color: #FFFFFF;
 }
 table.pvtTable thead tr th, table.pvtTable tbody tr th {
     background-color: #ACF5D2;
@@ -45,9 +47,9 @@ table.pvtTable tbody tr td {
 .pvtAggregator { margin-bottom: 5px ;}
 
 .pvtAxisContainer, .pvtVals {
-    border: 1px solid #FAFBFC;
-    /*    background: #EEE;*/
-    background-color: #FAFBFC;
+    /*    border: 1px solid #FAFBFC;
+      /*    background: #EEE;
+        background-color: #FAFBFC;*/
     padding: 5px;
     min-width: 20px;
     min-height: 20px;
