@@ -92,7 +92,7 @@ table.pvtTable tbody tr td {
     color: grey;
 }
 
-.pvtHorizList li { display: inline; }
+.pvtHorizList li { display: inline-block; }
 .pvtVertList {
     vertical-align: top;
     background-color: #FFFFFF;
