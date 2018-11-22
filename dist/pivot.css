@@ -20,7 +20,7 @@ table.pvtTable thead tr th, table.pvtTable tbody tr th {
 table.pvtTable tbody tr:hover td,
 table.pvtTable tbody tr:hover th    {
     background-color: #F4F5F7 !important;
-    color: #ffffff !important;
+    color: #172B4D !important;
     text-decoration: underline;
 }
 
