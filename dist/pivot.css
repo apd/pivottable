@@ -134,3 +134,7 @@ table.pvtTable tbody tr td {
 .pvtUnused  {
     background-color: #FFFFFF;
 }
+
+.pvtCols, .pvtRows {
+    background-color: #EBECF0;
+}
