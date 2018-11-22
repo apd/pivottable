@@ -21,6 +21,9 @@ table.pvtTable tbody tr:hover td,
 table.pvtTable tbody tr:hover th    {
     background-color: #F4F5F7 !important;
     color: #172B4D !important;
+}
+
+table.pvtTable tbody td:hover    {
     text-decoration: underline;
 }
 
