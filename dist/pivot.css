@@ -35,7 +35,7 @@ table.pvtTable tbody tr td {
     text-align: right;
 }
 
-.pvtTotal, .pvtGrandTotal { font-weight: bold; white-space: nowrap; }
+.pvtTotal, .pvtGrandTotal { font-weight: bold; white-space: nowrap; cursor:pointer; }
 
 .pvtVals { text-align: center; white-space: nowrap;}
 .pvtRowOrder, .pvtColOrder {
@@ -44,6 +44,10 @@ table.pvtTable tbody tr td {
     margin-left: 5px;
     display: inline-block; }
 .pvtAggregator { margin-bottom: 5px ;}
+
+.pvtVal {
+    cursor:pointer;
+}
 
 .pvtAxisContainer, .pvtVals {
     /*    border: 1px solid #FAFBFC;
