@@ -130,3 +130,7 @@ table.pvtTable tbody tr td {
 .pvtCheckContainer p{ margin: 5px; }
 
 .pvtRendererArea { padding: 0px;}
+
+.pvtUnused  {
+    background-color: #FFFFFF;
+}
