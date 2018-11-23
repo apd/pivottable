@@ -498,6 +498,7 @@ callWithJQuery ($) ->
                 tr.appendChild th
             th = document.createElement("th")
             th.className = "pvtAxisLabel"
+            th.title = c
             th.textContent = c
             tr.appendChild th
             for own i, colKey of colKeys
@@ -524,6 +525,7 @@ callWithJQuery ($) ->
             for own i, r of rowAttrs
                 th = document.createElement("th")
                 th.className = "pvtAxisLabel"
+                th.title = c
                 th.textContent = r
                 tr.appendChild th
             th = document.createElement("th")

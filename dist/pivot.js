@@ -912,6 +912,7 @@
         }
         th = document.createElement("th");
         th.className = "pvtAxisLabel";
+        th.title = c;
         th.textContent = c;
         tr.appendChild(th);
         for (i in colKeys) {
@@ -946,6 +947,7 @@
           r = rowAttrs[i];
           th = document.createElement("th");
           th.className = "pvtAxisLabel";
+          th.title = c;
           th.textContent = r;
           tr.appendChild(th);
         }
