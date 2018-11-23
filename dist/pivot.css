@@ -47,7 +47,10 @@ table.pvtTable tbody tr td {
     width: 15px;
     margin-left: 5px;
     display: inline-block; }
-.pvtAggregator { margin-bottom: 5px ;}
+.pvtAggregator {
+    margin-bottom: 5px;
+    width: 100px;
+}
 
 .pvtVal {
     cursor:pointer;
@@ -134,6 +137,10 @@ table.pvtTable tbody tr td {
 .pvtCheckContainer p{ margin: 5px; }
 
 .pvtRendererArea { padding: 0px;}
+
+.pvtRenderer    {
+    width: 100px;
+}
 
 .pvtUnused  {
     background-color: #FFFFFF;
