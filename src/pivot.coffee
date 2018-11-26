@@ -567,7 +567,7 @@ callWithJQuery ($) ->
                 val = totalAggregator.value()
                 td = document.createElement("td")
                 td.className = "pvtTotal rowTotal"
-                td.textContent = totalAggregator.format(val)
+                td.textContent = totalAggregator.format(val/1000)
                 td.setAttribute("data-value", val)
                 if getClickHandler?
                     td.onclick = getClickHandler(val, rowKey, [])
@@ -589,7 +589,7 @@ callWithJQuery ($) ->
                 val = totalAggregator.value()
                 td = document.createElement("td")
                 td.className = "pvtTotal colTotal"
-                td.textContent = totalAggregator.format(val)
+                td.textContent = totalAggregator.format(val/1000)
                 td.setAttribute("data-value", val)
                 if getClickHandler?
                     td.onclick = getClickHandler(val, [], colKey)
@@ -600,7 +600,7 @@ callWithJQuery ($) ->
                 val = totalAggregator.value()
                 td = document.createElement("td")
                 td.className = "pvtGrandTotal"
-                td.textContent = totalAggregator.format(val)
+                td.textContent = totalAggregator.format(val/1000)
                 td.setAttribute("data-value", val)
                 if getClickHandler?
                     td.onclick = getClickHandler(val, [], [])
