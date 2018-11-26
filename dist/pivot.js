@@ -989,7 +989,8 @@
           val = aggregator.value();
           td = document.createElement("td");
           td.className = `pvtVal row${i} col${j}`;
-          td.textContent = aggregator.format(val);
+          //                td.textContent = aggregator.format(val)
+          td.textContent = aggregator.format(val / 1000);
           td.setAttribute("data-value", val);
           if (getClickHandler != null) {
             td.onclick = getClickHandler(val, rowKey, colKey);
